@@ -1,0 +1,17 @@
+
+
+.main-container{
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+ 
+    
+}
+
+
+.chat-list{
+    height: calc(100% - 50px); /* Adjust the height as needed, considering the search bar's height */
+    overflow-y: auto; 
+    display: flex;
+    flex-direction: column;
+}
