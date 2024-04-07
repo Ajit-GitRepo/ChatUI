@@ -1,0 +1,15 @@
+.search-bar{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 30px 20px ;
+    background-color: rgba(68, 201, 190, 0.1);
+    
+ 
+}
+input#user-input{
+    width: 90%;    
+    padding: 20px;
+    font-size: 14px;
+    border-radius: 30px;
+    text-align: center;
+}

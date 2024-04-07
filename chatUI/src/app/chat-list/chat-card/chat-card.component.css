@@ -1,0 +1,72 @@
+.wraper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.break{
+    width: 90%;
+    height: 1px;background-color: rgba(0, 0, 0, 0.295);
+}
+
+.main-container{
+    cursor: pointer;
+    box-sizing: border-box;
+    min-width: 100%;
+    min-height: 100px;
+    max-height: 150px;
+    padding: 10px 40px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.profile-sec {
+    min-width: 100px;
+    width: 100px;
+    min-height: 100px; /* Add height to maintain aspect ratio */
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden; /* Ensure the image doesn't overflow the container */
+  }
+  
+  .profile-sec img {
+    width: 100%;
+    height: 100%; /* Ensure the image fills the entire container */
+    object-fit: cover; /* Scale the image while preserving its aspect ratio */
+    object-position: center;
+  }
+
+  
+
+.user-name-msg-preview{
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
+    /* gap: px; */
+    justify-content: center;
+    align-items: flex-start;
+}
+.user-name p {
+    font-size: 28px;
+    font-weight: 600;
+    padding: 0px;
+    margin: 5px;
+    font-family: "Noto Sans", sans-serif
+}
+.last-message{
+    font-family: "Noto Sans", sans-serif;
+    min-height: 20px;
+    min-width: 100px;
+    height: 25px;
+
+}
+.time{
+    font-family: "Noto Sans", sans-serif;
+    font-size: 16px;
+    justify-self: end;
+    align-self: flex-start;
+    margin: 25px 0px 0px 100px;
+}

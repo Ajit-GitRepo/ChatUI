@@ -1,0 +1,142 @@
+.main-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    
+
+}
+.user-profile{
+    cursor: pointer;
+    position: relative;
+    top:0;
+      box-sizing: border-box;
+    /* justify-self: flex-start; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height:150px;
+    padding: 0px 50px 0px 20px;
+    gap: 20px;
+
+}
+.profile-sec{
+    width: 100px;
+    height: 75px; /* Add height to maintain aspect ratio */
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden; /* Ensure the image doesn't overflow the container */
+  }
+  
+  .profile-sec img {
+    width: 100%;
+    height: 100%; /* Ensure the image fills the entire container */
+    object-fit: cover; /* Scale the image while preserving its aspect ratio */
+  }
+
+.user-name{
+    padding: 20px 10px;
+    text-align: start;
+}
+.user-name p {
+    font-size: 38px;
+    font-weight: 600;
+    padding: 0px;
+    margin: 5px;
+    font-family: "Noto Sans", sans-serif
+}
+small{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0px;
+    margin: 5px;
+    font-family: "Noto Sans", sans-serif
+}
+.call-options{
+    display: flex;
+    align-items: center;
+    font-size: 45px;
+    gap: 50px;
+}
+button#call{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 50px;
+    font-size: 40px;
+    padding: 25px;
+    text-align: center;
+}
+.break{
+    width: 95%;
+    height: 1px;background-color: rgba(0, 0, 0, 0.295);
+}
+
+.chat-sec{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    padding: 20px 45px;
+    flex-direction: column;
+
+}
+.chat-message{
+    display: flex;
+    flex-direction: column;
+    height:100%;
+   
+  background-size: cover;
+    
+}
+.chat-message,.input-control{
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.6)), url('https://static.vecteezy.com/system/resources/thumbnails/000/543/792/small_2x/180220_01_Seamless_flower_pattern.jpg');
+}
+/* .main-container{
+    background: linear-gradient(rgba(255, 255, 255, 0.247), rgba(255, 255, 255, 0.5)), url('https://static.vecteezy.com/system/resources/thumbnails/000/543/792/small_2x/180220_01_Seamless_flower_pattern.jpg');
+} */
+
+
+.input-control{
+    padding: 20px 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.controls{
+    justify-self: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 20px;
+}
+
+#controls-btn{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 50px;
+    font-size: 40px;
+    text-align: center;}
+
+
+.message-input{
+    position: relative;
+    width: 70%;
+}
+.message-input input{
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 25px;
+    padding: 25px;
+    border-radius: 30px;
+}

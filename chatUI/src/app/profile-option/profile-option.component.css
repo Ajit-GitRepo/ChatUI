@@ -1,0 +1,62 @@
+.contianer{
+    padding: 30px 30px 20px 30px;
+    box-sizing: border-box;
+    height:100% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(158, 151, 151, 0.411);
+    align-items: center;
+}
+.profile-sec {
+    width: 150px;
+    height: 130px; /* Add height to maintain aspect ratio */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid red;
+    overflow: hidden; /* Ensure the image doesn't overflow the container */
+  }
+  
+  .profile-sec img {
+    width: 100%;
+    height: 100%; /* Ensure the image fills the entire container */
+    object-fit: cover; /* Scale the image while preserving its aspect ratio */
+    object-position: center;
+   
+  }
+i{
+    cursor: pointer;
+}
+
+.options{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    padding: 15px;
+    height: 40%;
+    /* color: rgb(238, 42, 205); */
+    color: white;
+    font-size: 30px;
+}
+#option-btn{
+    width: 100%;
+border: none;
+background:transparent;
+color: white;
+}
+.utility-option{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    /* color: rgb(238, 42, 205); */
+    color: white;
+    font-size: 30px;
+    /* background-color:crimson ; */
+    background-color: rgba(158, 151, 151, 0.151);
+}
