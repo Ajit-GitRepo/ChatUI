@@ -2,26 +2,3 @@
     margin: 0;
     padding: 0;
 }
-
-.container{
-    background-color: rgba(68, 201, 190, 0.1);
-    padding: 125px 200px 75px 200px;
-    border: 2px solid red;
-    height:84vh;
-    display: grid;
-    grid-template-columns: 1fr 4fr 7fr;
-    text-align: center;
-}
-.list-search{
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-  min-width: 600px !important;
-}
-  .chat-list {
-    scrollbar-width:none;
-    scrollbar-color: #ccc #f0f0f0;
-  }
-  .options{
-    max-width: 250px;
-  }

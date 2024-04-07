@@ -1,0 +1,46 @@
+#option-btn{
+    width: 50%;
+    border: none;
+    background:transparent;
+    color: white;
+}
+.main-container{
+    height: 100%;
+}
+.main-container, .username-img{
+    padding: 50px;
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.profile-img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+img{
+    width: 100%;
+    object-fit: fill;
+}
+.user-name p{
+    font-size: 48px;
+    font-weight: 600;
+    font-family: "Noto Sans", sans-serif;
+}
+.options{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.options #option-btn{
+    cursor: pointer;
+    border: none; 
+    background: transparent;
+    font-size: 50px;
+    color: black;
+}

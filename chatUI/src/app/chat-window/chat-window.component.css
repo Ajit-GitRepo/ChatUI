@@ -126,7 +126,8 @@ button#call{
     border: none;
     border-radius: 50px;
     font-size: 40px;
-    text-align: center;}
+    text-align: center;
+}
 
 
 .message-input{
