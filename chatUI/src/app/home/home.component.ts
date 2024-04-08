@@ -13,4 +13,8 @@ export class HomeComponent {
     imgUrl:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXd_H0QYcjS11VgnQYNfy3NOSZzWQ64h9v_iMGCJi_fw&s',
     mobileNumber:9822088599
   }
+
+  selectedChat(){
+    
+  }
 }

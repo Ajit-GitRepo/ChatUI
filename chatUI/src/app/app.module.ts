@@ -13,6 +13,7 @@ import {MatBadgeModule} from '@angular/material/badge';
 import { HomeComponent } from './home/home.component';
 import {MatButtonModule} from '@angular/material/button';
 import {MatDialogModule} from '@angular/material/dialog';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     AppRoutingModule,
     MatBadgeModule,
     MatButtonModule,
-    MatDialogModule
+    MatDialogModule,
+    MatTooltipModule
   ],
   providers: [
     provideClientHydration(),

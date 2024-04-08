@@ -1,13 +1,17 @@
 <div class="main-container">
     <div class="username-img">
         <div class="profile-img">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXd_H0QYcjS11VgnQYNfy3NOSZzWQ64h9v_iMGCJi_fw&s" alt="">
-        </div>
-        <div class="user-name"><p>Ajay</p></div>
+            <img [src]="userData.imgUrl?userData.imgUrl:'https://as2.ftcdn.net/v2/jpg/03/49/49/79/1000_F_349497933_Ly4im8BDmHLaLzgyKg2f2yZOvJjBtlw5.jpg'" alt="Profile Image">        </div>
+        <div class="user-name"><p>{{userData.userName}}</p></div>
     </div>
     <div class="options">
-        <button id="option-btn"><i class='bx bx-shield' ></i></button>
-        <button id="option-btn"><i class='bx bx-lock-alt' ></i></button>
-        <button id="option-btn"><i class='bx bx-shape-square'></i></button>
+        <button id="option-btn" style="color: orangered;"  matTooltip="Security settings & info"><i class='bx bx-shield' ></i></button>
+        <button id="option-btn" style="color: green;"><i class='bx bx-lock-alt' ></i></button>
+        <button id="option-btn" ><i class='bx bx-shape-square'></i></button>
+    </div>
+    <div class="close-btn" >
+        <button id="option-btn" style="color: red;" (click)="closeModal()" >
+            <i class='bx bx-x-circle' ></i>
+        </button>
     </div>
 </div>

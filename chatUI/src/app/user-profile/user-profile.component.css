@@ -6,6 +6,9 @@
 }
 .main-container{
     height: 100%;
+    /* background-color: grey; */
+    /* color: white; */
+  
 }
 .main-container, .username-img{
     padding: 50px;
@@ -17,6 +20,9 @@
 }
 
 .profile-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 250px;
     height: 250px;
     border-radius: 50%;
@@ -25,6 +31,7 @@
 img{
     width: 100%;
     object-fit: fill;
+    object-position: center;
 }
 .user-name p{
     font-size: 48px;
@@ -37,10 +44,14 @@ img{
     align-items: center;
     justify-content: center;
 }
-.options #option-btn{
+#option-btn{
     cursor: pointer;
     border: none; 
     background: transparent;
     font-size: 50px;
     color: black;
+}
+.close-btn{
+    position: absolute;
+    bottom: 45px;
 }
