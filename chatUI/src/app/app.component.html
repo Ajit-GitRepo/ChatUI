@@ -1,18 +1,1 @@
-<div class="container">
-  <div class="options" style="background-color: black; box-shadow: 0px 10px 0px rgba(255, 255, 255, 0.1);">
-    <app-profile-option [userProfile]="loggedinUser"></app-profile-option>
-  </div>
-
-  <div class="list-search">
-    <div class="search-bar">
-      <app-search-bar></app-search-bar>
-    </div>
-    <div class="chat-list"  style="background-color: rgba(0, 231, 212, 0.055); box-shadow: 0px 10px 0px rgba(255, 255, 255, 0.1);    overflow-y: auto; ">
-      <app-chat-list></app-chat-list>
-    </div>
-    
-  </div>
-  <div style="background-color:white; box-shadow: 0px 10px 0px rgba(255, 255, 255, 0.1);">
-    <app-chat-window></app-chat-window>
-  </div>
-</div>
+<router-outlet></router-outlet>

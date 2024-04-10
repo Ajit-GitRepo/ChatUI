@@ -1,15 +1,15 @@
 <div class="contianer">
-   <div class="profile-sec">
+   <div class="profile-sec" (click)="openDialog()" >
             <img [src]="userProfile.imgUrl?userProfile.imgUrl:'https://as2.ftcdn.net/v2/jpg/03/49/49/79/1000_F_349497933_Ly4im8BDmHLaLzgyKg2f2yZOvJjBtlw5.jpg'" alt="Profile Image">
         </div>
     <div class="options">
-       <a href="#" id="option-btn"> <i class='bx bx-chat'></i></a>
-       <a href="#" id="option-btn"><i class='bx bxs-phone'></i></a>
-       <a href="#" id="option-btn">  <i class='bx bx-user' ></i></a>
-        <a href="#" id="option-btn"> <i class='bx bx-bell' ></i></a>
+       <a  id="option-btn" matBadge="4" matBadgeOverlap="false" [matBadgeHidden]="hidden" (click)="toggleBadgeVisibility()"> <i class='bx bx-chat'></i></a>
+       <a href="#" id="option-btn" matBadge="2" matBadgeOverlap="true" ><i class='bx bxs-phone' ></i></a>
+       <!-- <a href="#" id="option-btn">  <i class='bx bx-user' ></i></a> -->
+        <a href="#" id="option-btn" matBadge="8" matBadgeSize="large" matBadgeOverlap="true"> <i class='bx bx-bell' ></i></a>
     </div>
     <div class="utility-option">    
-        <i class='bx bx-cog' ></i>
-        <i class='bx bx-log-in' ></i>
+        <button class="mat-icon-button" id="option-btn"><i class='bx bx-cog' ></i></button>
+        <button class="mat-icon-button" id="option-btn" (click)="logOutUser()"><i class='bx bx-log-in' ></i></button>
     </div>
 </div>

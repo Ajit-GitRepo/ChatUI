@@ -1,0 +1,58 @@
+#option-btn{
+    width: 50%;
+    border: none;
+    background:transparent;
+    color: white;
+}
+.main-container{
+    height: 100%;
+    /* background-color: grey; */
+    /* color: white; */
+  
+}
+.main-container, .username-img{
+    padding: 50px;
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.profile-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    object-position: center;
+}
+.user-name p{
+    font-size: 48px;
+    font-weight: 600;
+    font-family: "Noto Sans", sans-serif;
+}
+.options{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#option-btn{
+    cursor: pointer;
+    border: none; 
+    background: transparent;
+    font-size: 50px;
+    color: black;
+}
+.close-btn{
+    position: absolute;
+    bottom: 45px;
+}

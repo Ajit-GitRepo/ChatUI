@@ -8,6 +8,15 @@ import { ChatListComponent } from './chat-list/chat-list.component';
 import { ChatWindowComponent } from './chat-window/chat-window.component';
 import { ChatCardComponent } from './chat-list/chat-card/chat-card.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import {MatBadgeModule} from '@angular/material/badge';
+import { HomeComponent } from './home/home.component';
+import {MatButtonModule} from '@angular/material/button';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import { CommonModule } from '@angular/common';
+import { AuthModule } from './auth/auth.module';
+
 
 @NgModule({
   declarations: [
@@ -16,14 +25,23 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
     ChatListComponent,
     ChatWindowComponent,
     ChatCardComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    HomeComponent,
+ 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    CommonModule,
+    AppRoutingModule,
+    MatBadgeModule,
+    MatButtonModule,
+    MatDialogModule,
+    MatTooltipModule,
+    AuthModule
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(),
+    provideAnimationsAsync()
   ],
   bootstrap: [AppComponent]
 })
