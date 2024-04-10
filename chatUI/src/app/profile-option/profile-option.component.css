@@ -47,6 +47,10 @@ i{
     background:transparent;
     color: white;
 }
+#option-btn:hover{
+    color: rgb(128, 10, 158) !important; 
+}
+
 .utility-option #option-btn{
     width: 100%;
     border: none;

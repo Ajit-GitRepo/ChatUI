@@ -5,11 +5,11 @@
     <div class="options">
        <a  id="option-btn" matBadge="4" matBadgeOverlap="false" [matBadgeHidden]="hidden" (click)="toggleBadgeVisibility()"> <i class='bx bx-chat'></i></a>
        <a href="#" id="option-btn" matBadge="2" matBadgeOverlap="true" ><i class='bx bxs-phone' ></i></a>
-       <a href="#" id="option-btn">  <i class='bx bx-user' ></i></a>
+       <!-- <a href="#" id="option-btn">  <i class='bx bx-user' ></i></a> -->
         <a href="#" id="option-btn" matBadge="8" matBadgeSize="large" matBadgeOverlap="true"> <i class='bx bx-bell' ></i></a>
     </div>
     <div class="utility-option">    
         <button class="mat-icon-button" id="option-btn"><i class='bx bx-cog' ></i></button>
-        <button class="mat-icon-button" id="option-btn"><i class='bx bx-log-in' ></i></button>
+        <button class="mat-icon-button" id="option-btn" (click)="logOutUser()"><i class='bx bx-log-in' ></i></button>
     </div>
 </div>

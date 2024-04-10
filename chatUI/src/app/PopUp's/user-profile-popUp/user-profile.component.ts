@@ -1,6 +1,6 @@
 import { Component, Inject, OnInit, Optional } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
-import { UserProfile } from '../models/profile.model';
+import { UserProfileModel } from '../../models/profile.model';
 
 
 
@@ -10,7 +10,7 @@ import { UserProfile } from '../models/profile.model';
   styleUrl: './user-profile.component.css'
 })
 export class UserProfileComponent implements OnInit{
-  userData!:UserProfile;
+  userData!:UserProfileModel;
   constructor(public dialogRef: MatDialogRef<UserProfileComponent>,
     @Optional() @Inject(MAT_DIALOG_DATA) public data: any
    ){}

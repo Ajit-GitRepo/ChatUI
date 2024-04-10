@@ -3,4 +3,5 @@ export interface ChatProfilesModel{
     userName:String;
     imgUrl:string;
     chatID:number;
+    mobileNumber:number;
 }

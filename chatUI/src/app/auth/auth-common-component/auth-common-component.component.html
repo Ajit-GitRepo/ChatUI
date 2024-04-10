@@ -1,0 +1,41 @@
+<div class="main-container">
+    <div class="sec-1">
+         <p>Welcome!</p>
+         <div>
+            <p style="font-size: 30px; width: 100%;"> Secure, Faster and our Platform to connect!</p>
+         </div>
+         <div>
+            <button id="auth-btn" > Join Us</button>
+            <button id="auth-btn"(click)="logInForm()"> Log In</button>
+         </div>
+    </div>
+    <div class="sec-2" *ngIf="isShow">
+   <ng-container *ngIf="isLogIn" [formGroup]="loginFrm">
+         <div class="user-input-container">
+            <div class="user-input">
+               <label for="userName"><i class='bx bx-user'></i></label>
+               <input 
+               type="text" 
+               name="userName" 
+               id="userName" 
+               formControlName="userName"
+               placeholder="Username">
+            </div>
+            <div class="user-input">
+               <label for="password"><i class='bx bx-key' ></i></label>
+               <input
+                type="password"
+                name="password" 
+                id="password" 
+                formControlName="password"
+                placeholder="password">
+            </div>
+         </div>
+   </ng-container>
+   <div class="action-btn">
+
+      <button id="auth-btn" type="submit" (click)="login($event)">{{isLogIn?'Log in':'SingUp'}}</button>
+      <button id="auth-btn" style="color: black;background-color: whitesmoke">Cancel</button>
+   </div>
+   </div>
+</div>

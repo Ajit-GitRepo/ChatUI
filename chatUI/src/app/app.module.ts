@@ -14,6 +14,8 @@ import { HomeComponent } from './home/home.component';
 import {MatButtonModule} from '@angular/material/button';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import { CommonModule } from '@angular/common';
+import { AuthModule } from './auth/auth.module';
 
 
 @NgModule({
@@ -24,16 +26,18 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     ChatWindowComponent,
     ChatCardComponent,
     SearchBarComponent,
-    HomeComponent
-
+    HomeComponent,
+ 
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     AppRoutingModule,
     MatBadgeModule,
     MatButtonModule,
     MatDialogModule,
-    MatTooltipModule
+    MatTooltipModule,
+    AuthModule
   ],
   providers: [
     provideClientHydration(),

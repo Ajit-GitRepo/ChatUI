@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { UserProfile } from './models/profile.model';
+import { UserProfileModel } from './models/profile.model';
 
 @Component({
   selector: 'app-root',

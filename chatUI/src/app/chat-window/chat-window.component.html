@@ -1,10 +1,14 @@
 <div class="main-container" *ngIf="selectedChat">
     <div class="user-profile">
-        <div style="display: flex; align-items: center; gap: 20px;"><div class="profile-sec">
-            <img [src]="selectedChat.imgUrl?selectedChat.imgUrl:'https://as2.ftcdn.net/v2/jpg/03/49/49/79/1000_F_349497933_Ly4im8BDmHLaLzgyKg2f2yZOvJjBtlw5.jpg'" alt="Profile-image">        </div>
+        <div style="display: flex; align-items: center; gap: 20px;">
+            <div style="display: flex; align-items: center;gap: 15px;" (click)="openProfile(selectedChat)">
+                <div class="profile-sec" >
+            <img [src]="selectedChat.imgUrl?selectedChat.imgUrl:'https://as2.ftcdn.net/v2/jpg/03/49/49/79/1000_F_349497933_Ly4im8BDmHLaLzgyKg2f2yZOvJjBtlw5.jpg'" alt="Profile-image">  
+            </div>
         <div class="username-status">
             <div class="user-name"><p>{{selectedChat.userName}}</p>
                 <p> <small style="color: green;"> 💚Acive now</small></p>
+            </div>
             </div>
         </div></div>
         <div class="call-options">
