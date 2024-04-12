@@ -7,7 +7,7 @@
             </div>
         <div class="username-status">
             <div class="user-name"><p>{{selectedChat.userName}}</p>
-                <p> <small style="color: green;"> 💚Acive now</small></p>
+                <p> <small style="color: green; font-size: small"> 💚Acive now</small></p>
             </div>
             </div>
         </div></div>
@@ -28,6 +28,6 @@
        </div>
     </div>
 </div>
-<div class="empty">
+<div class="empty" *ngIf="!selectedChat">
     <p>Select the chat to see the conversation </p>
 </div>

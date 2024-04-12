@@ -16,6 +16,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { CommonModule } from '@angular/common';
 import { AuthModule } from './auth/auth.module';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -37,6 +38,7 @@ import { AuthModule } from './auth/auth.module';
     MatButtonModule,
     MatDialogModule,
     MatTooltipModule,
+    HttpClientModule,
     AuthModule
   ],
   providers: [

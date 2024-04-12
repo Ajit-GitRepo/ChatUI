@@ -1,16 +1,17 @@
 <div class="main-container">
     <div class="sec-1">
-         <p>Welcome!</p>
+         <p id="header">Welcome!</p>
          <div>
             <p style="font-size: 30px; width: 100%;"> Secure, Faster and our Platform to connect!</p>
          </div>
          <div>
-            <button id="auth-btn" > Join Us</button>
-            <button id="auth-btn"(click)="logInForm()"> Log In</button>
+            <button id="auth-btn" type="button" (click)="showFrm()" > Join Us</button>
+            <button id="auth-btn" type="button"  (click)="logInForm()"> Log In</button>
+            <button (click)="run()">click me</button>
          </div>
     </div>
     <div class="sec-2" *ngIf="isShow">
-   <ng-container *ngIf="isLogIn" [formGroup]="loginFrm">
+   <ng-container *ngIf="isLogIn" [formGroup]="loginFrm" >
          <div class="user-input-container">
             <div class="user-input">
                <label for="userName"><i class='bx bx-user'></i></label>
@@ -18,8 +19,10 @@
                type="text" 
                name="userName" 
                id="userName" 
-               formControlName="userName"
-               placeholder="Username">
+               formControlName="mobileNumber"
+               placeholder="Enter mobile number"
+               pattern="[0-9]{10}" 
+               required="true">
             </div>
             <div class="user-input">
                <label for="password"><i class='bx bx-key' ></i></label>
@@ -28,13 +31,68 @@
                 name="password" 
                 id="password" 
                 formControlName="password"
-                placeholder="password">
+                placeholder="password"
+                required="true">
             </div>
          </div>
    </ng-container>
+   <ng-container *ngIf="!isLogIn" [formGroup]="singUpFrm">
+      <div class="user-input-container">
+         <div class="user-input">
+            <label for="userName">Fist Name</label>
+            <input 
+            type="text" 
+            name="FistName" 
+            id="FistName" 
+            formControlName="firstName"
+            placeholder="Fist Name"
+            required="true"
+            >
+         </div>
+         <div class="user-input">
+            <label for="userName">Last Name</label>
+            <input 
+            type="text" 
+            name="lastName" 
+            id="lastName" 
+            formControlName="lastName"
+            placeholder="last Name"
+            required="true"
+            >
+         </div>
+         <div class="user-input">
+            <label for="userName">Mobile Number</label>
+            <input 
+            type="text" 
+            name="mobileNumber" 
+            id="mobileNumber" 
+            formControlName="mobileNumber"
+            placeholder="Mobile Number "
+            pattern="[0-9]{10}" 
+            title="Please enter a 10-digit mobile number"
+            required="true"
+            >
+         </div>
+         
+         <div class="user-input">
+            <label for="userName">Password</label>
+            <input 
+            type="text" 
+            name="password" 
+            id="password" 
+            placeholder="Password "
+            [(value)]="password"
+            formControlName="password"    
+            title="Please enter a password"
+            required="true"
+            >
+         </div>
+      </div>
+</ng-container>
    <div class="action-btn">
 
-      <button id="auth-btn" type="submit" (click)="login($event)">{{isLogIn?'Log in':'SingUp'}}</button>
+      <button id="auth-btn" type="submit" *ngIf="isLogIn" (click)="authUser($event)" [disabled]="!loginFrm.valid">Log in >> {{ loginFrm.valid }}</button>
+      <button id="auth-btn" type="submit" *ngIf="!isLogIn" (click)="authUser($event)" [disabled]="!singUpFrm.valid">SingUp</button>
       <button id="auth-btn" style="color: black;background-color: whitesmoke">Cancel</button>
    </div>
    </div>

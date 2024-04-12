@@ -32,7 +32,6 @@ export class ProfileOptionComponent {
       data: {
         userName: this.userProfile.userName,
         imgUrl: this.userProfile.imgUrl,
-        userID: this.userProfile.userID,
         mobileNumber: this.userProfile.mobileNumber,
         callerComponent:"profileOption"
       },
