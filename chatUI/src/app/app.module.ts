@@ -17,6 +17,9 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import { CommonModule } from '@angular/common';
 import { AuthModule } from './auth/auth.module';
 import { HttpClientModule } from '@angular/common/http';
+import {MatIconModule} from '@angular/material/icon';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { PopUpModule } from './PopUp\'s/pop-up.module';
 
 
 @NgModule({
@@ -39,7 +42,10 @@ import { HttpClientModule } from '@angular/common/http';
     MatDialogModule,
     MatTooltipModule,
     HttpClientModule,
-    AuthModule
+    AuthModule,
+    MatIconModule,
+    NgbModule,
+    PopUpModule
   ],
   providers: [
     provideClientHydration(),

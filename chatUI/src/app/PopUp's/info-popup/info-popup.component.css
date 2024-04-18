@@ -1,0 +1,22 @@
+#warn-btn{
+    color: white;
+    background-color: rgba(235, 34, 34, 0.829);
+    font-size: 1.3rem;
+    padding: 1rem 2rem;
+    height: 3rem;
+    width: 9rem;
+}
+
+/* ::ng-deep .custom-dialog{
+    background-color: red;
+  } */
+.info p{
+    font-size: 1rem;
+}
+  .main-container{
+    padding:15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }

@@ -1,4 +1,4 @@
-.container{
+.main-container{
     background-color: rgba(68, 201, 190, 0.1);
     padding: 25px 100px 25px 100px;
     border: 2px solid red;
@@ -9,6 +9,7 @@
     display: grid;
     grid-template-columns: 100px 4fr 7fr;
     text-align: center;
+    overflow: hidden;
 }
 .list-search{
     display: flex;
@@ -22,4 +23,9 @@
   }
   .options{
     max-width: 250px;
+  }
+
+  .search-bar{
+    display: flex;
+    align-items: center;
   }

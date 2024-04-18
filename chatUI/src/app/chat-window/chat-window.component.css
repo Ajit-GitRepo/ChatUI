@@ -127,9 +127,10 @@ button#call{
     display: flex;
     align-items: center;
     border: none;
-    border-radius: 50px;
+    border-radius: 50%;
     font-size: 40px;
     text-align: center;
+    background: transparent;
 }
 
 
@@ -141,6 +142,7 @@ button#call{
     box-sizing: border-box;
     width: 100%;
     font-size: 25px;
-    padding: 25px;
+    padding: 12px;
+    border: 1px solid black;
     border-radius: 30px;
 }

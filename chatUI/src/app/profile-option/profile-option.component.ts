@@ -15,6 +15,8 @@ export class ProfileOptionComponent {
  constructor(public dialog: MatDialog, private router:Router){}
 
   @Input() userProfile!:UserProfileModel;
+
+  
   run(){
     alert("test")
   }
@@ -37,11 +39,13 @@ export class ProfileOptionComponent {
       },
       panelClass: 'custom-dialog',
       width: '35%', // Set the width of the dialog to 35% of the viewport width
-      height: '75%', // Set the height of the dialog to 75% of the viewport height
+      height: '80%', // Set the height of the dialog to 75% of the viewport height
       position: {
         top: '50px' // Position the dialog at the top of the viewport, 50px from the top
       }
-    });
+    }).afterClosed().subscribe(
+      res=>{console.log(" user profile dialog closed with data", res)}
+    );
   }
   logOutUser(){
     // logOut user logic
