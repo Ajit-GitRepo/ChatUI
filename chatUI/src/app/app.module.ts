@@ -20,6 +20,7 @@ import { HttpClientModule } from '@angular/common/http';
 import {MatIconModule} from '@angular/material/icon';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PopUpModule } from './PopUp\'s/pop-up.module';
+import { StoreModule } from '@ngrx/store';
 
 
 @NgModule({
@@ -45,7 +46,8 @@ import { PopUpModule } from './PopUp\'s/pop-up.module';
     AuthModule,
     MatIconModule,
     NgbModule,
-    PopUpModule
+    PopUpModule,
+    StoreModule.forRoot({}, {})
   ],
   providers: [
     provideClientHydration(),
