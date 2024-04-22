@@ -21,6 +21,7 @@ import {MatIconModule} from '@angular/material/icon';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PopUpModule } from './PopUp\'s/pop-up.module';
 import { StoreModule } from '@ngrx/store';
+import { EffectsModule } from '@ngrx/effects';
 
 
 @NgModule({
@@ -47,7 +48,8 @@ import { StoreModule } from '@ngrx/store';
     MatIconModule,
     NgbModule,
     PopUpModule,
-    StoreModule.forRoot({}, {})
+    StoreModule.forRoot({}, {}),
+    EffectsModule.forRoot([])
   ],
   providers: [
     provideClientHydration(),
