@@ -19,10 +19,10 @@
     <div class="break"></div>
     <div class="chat-sec">
         <div class="chat-message"><p>test</p></div>
-       <div class="input-control">
-        <div class="message-input"><input type="text" placeholder="Type message here"></div>
+       <div class="input-control" [formGroup]="sendMessageinput">
+        <div class="message-input"><input type="text" placeholder="Type message here" formControlName="message"></div>
         <div class="controls">
-            <button id="controls-btn"><i class='bx bx-send' ></i></button>
+            <button id="controls-btn" (click)="onSendMessage()"><i class='bx bx-send' ></i></button>
             <button id="controls-btn"><i class='bx bx-plus-circle' ></i></button>
         </div>
        </div>
