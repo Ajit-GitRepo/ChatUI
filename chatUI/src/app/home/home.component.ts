@@ -13,6 +13,8 @@ import { Router } from '@angular/router';
   styleUrl: './home.component.css'
 })
 export class HomeComponent implements OnInit{
+  
+  private static readonly userDetailsKey= "userDetails";
 
   loggedinUser!:UserProfileModel;
   constructor(
@@ -25,7 +27,10 @@ export class HomeComponent implements OnInit{
   ngOnInit(): void {
     let temp = localStorage.getItem('loggedInUser');
     this.authService.getUserProfile(Number(temp)).subscribe(
-      (next:UserProfileModel)=>{this.loggedinUser=next},
+      (next:UserProfileModel)=>{
+        this.loggedinUser=next
+        localStorage.setItem(HomeComponent.userDetailsKey,JSON.stringify(next));
+      },
       (error)=>{
         this.openInformationDialog("Hey! Seems like we missed somewhere please login, Sincere Apologies");
         this.logOutUser();
