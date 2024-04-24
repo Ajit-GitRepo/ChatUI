@@ -2,14 +2,20 @@
     box-sizing: border-box;
     width: 100%;
     padding: 30px 20px ;
-    background-color: rgba(68, 201, 190, 0.1);
-    
+    /* background-color: rgba(68, 201, 190, 0.1); */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
  
 }
 input#user-input{
-    width: 90%;    
-    padding: 20px;
-    font-size: 24px;
+
+    width: 100%;    
+    padding: 10px 30px;
+    font-size: 18px;
     border-radius: 30px;
-    text-align: center;
+    text-align: start;
+    border: 1px solid black; 
+
 }

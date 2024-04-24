@@ -1,5 +1,5 @@
 .contianer{
-    padding: 30px 30px 20px 30px;
+    padding: 30px 5px 20px 5px;
     box-sizing: border-box;
     height:100% ;
     display: flex;
@@ -9,8 +9,8 @@
     align-items: center;
 }
 .profile-sec {
-    width: 150px;
-    height: 130px; /* Add height to maintain aspect ratio */
+    width: 75px;
+    height: 75px; /* Add height to maintain aspect ratio */
     display: flex;
     justify-content: center;
     align-items: center;

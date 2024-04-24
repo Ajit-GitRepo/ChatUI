@@ -26,8 +26,10 @@
 
 }
 .profile-sec{
-    width: 100px;
-    height: 75px; /* Add height to maintain aspect ratio */
+    min-width: 75px;
+    width: 75px;
+    min-height: 75px; /* Add height to maintain aspect ratio */
+    height: 75px;/* Add height to maintain aspect ratio */
     display: flex;
     align-items: center;
     border-radius: 50%;
@@ -45,7 +47,7 @@
     text-align: start;
 }
 .user-name p {
-    font-size: 38px;
+    font-size: 30px;
     font-weight: 600;
     padding: 0px;
     margin: 5px;
@@ -61,8 +63,8 @@ small{
 .call-options{
     display: flex;
     align-items: center;
-    font-size: 45px;
-    gap: 50px;
+    /* font-size: 30px; */
+    gap: 30px;
 }
 button#call{
     cursor: pointer;
@@ -70,8 +72,8 @@ button#call{
     align-items: center;
     border: none;
     border-radius: 50px;
-    font-size: 40px;
-    padding: 25px;
+    font-size: 30px;
+    padding: 15px;
     text-align: center;
 }
 .break{
@@ -125,9 +127,10 @@ button#call{
     display: flex;
     align-items: center;
     border: none;
-    border-radius: 50px;
+    border-radius: 50%;
     font-size: 40px;
     text-align: center;
+    background: transparent;
 }
 
 
@@ -139,6 +142,7 @@ button#call{
     box-sizing: border-box;
     width: 100%;
     font-size: 25px;
-    padding: 25px;
+    padding: 12px;
+    border: 1px solid black;
     border-radius: 30px;
 }

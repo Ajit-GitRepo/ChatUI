@@ -13,18 +13,18 @@
     cursor: pointer;
     box-sizing: border-box;
     min-width: 100%;
-    min-height: 100px;
+    min-height: 75px;
     max-height: 150px;
     padding: 10px 40px;
     display: flex;
-    gap: 30px;
+    gap: 20px;
     align-items: center;
 }
 .profile-sec {
-    min-width: 100px;
-    width: 100px;
-    min-height: 100px; /* Add height to maintain aspect ratio */
-    height: 100px;
+    min-width: 75px;
+    width: 75px;
+    min-height: 75px; /* Add height to maintain aspect ratio */
+    height: 75px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,17 +50,18 @@
     align-items: flex-start;
 }
 .user-name p {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 600;
     padding: 0px;
-    margin: 5px;
+    margin-bottom: 15px;
     font-family: "Noto Sans", sans-serif
 }
 .last-message{
     font-family: "Noto Sans", sans-serif;
     min-height: 20px;
-    min-width: 100px;
+    min-width: 200px;
     height: 25px;
+    opacity: 75%;
 
 }
 .time{

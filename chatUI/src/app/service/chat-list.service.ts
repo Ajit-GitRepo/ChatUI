@@ -13,7 +13,7 @@ export class ChatListService {
 filteredChatList: BehaviorSubject<ChatProfilesModel[]> = new BehaviorSubject<ChatProfilesModel[]>(this.initialData);
 
 selectedChat= new Subject<ChatProfilesModel>();
-  constructor() { }
+  constructor() {  }
 
   chatList:ChatProfilesModel[]= [
     {
@@ -39,4 +39,7 @@ selectedChat= new Subject<ChatProfilesModel>();
     }
   ] ;
 
+  check(){
+    console.log("chat service created!")
+  }
 }

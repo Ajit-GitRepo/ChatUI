@@ -1,11 +1,19 @@
-<div class="container">
+<div class="main-container">
     <div class="options" style="background-color: black; box-shadow: 0px 10px 0px rgba(255, 255, 255, 0.1);">
       <app-profile-option [userProfile]="loggedinUser"></app-profile-option>
     </div>
   
     <div class="list-search">
       <div class="search-bar">
-        <app-search-bar></app-search-bar>
+       <div style="width: 80%;"> <app-search-bar></app-search-bar></div>
+       <div style="display: flex; width: 10%; gap: 10px; ">
+        <button mat-mini-fab color="primary" aria-label="Example icon button with a filter list icon">
+          <mat-icon>add</mat-icon>
+        </button>
+        <button mat-mini-fab aria-label="Example icon button with a filter list icon">
+          <mat-icon>filter_list</mat-icon>
+        </button>
+       </div>
       </div>
       <div class="chat-list"  style="background-color: rgba(0, 231, 212, 0.055); box-shadow: 0px 10px 0px rgba(255, 255, 255, 0.1);    overflow-y: auto; ">
         <app-chat-list ></app-chat-list>

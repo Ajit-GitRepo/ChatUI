@@ -16,12 +16,10 @@ export class UserProfileComponent implements OnInit{
    ){}
    ngOnInit(): void {
     this.userData = this.data;
-    console.log(this.userData, 'this is data')
-    //  this.userData.userName=this.data.userName
-    //  this.userData.imgUrl=this.data.imgUrl,
-    //  this.userData.mobileNumber=this.data.mobileNumber,
-    //  this.userData.userID=this.data.userID
-   
+    console.log(this.userData, 'this is data');
+     this.userData.userName="";
+     this.userData.imgUrl="";
+     this.userData.mobileNumber=0;
    }
    closeModal(){
     this.dialogRef.close();
